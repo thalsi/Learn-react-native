@@ -69,39 +69,59 @@
 //4 .multiple components
 
 import React, { useState } from 'react';
-import {View, Text, Image, Button} from 'react-native'
+import { View, Text, Image, Button, StyleSheet } from 'react-native';
 
-const Detials=(props)=>{
-    const [value,setValue]=useState(false);
-    return(
+
+const DetialsStyle = () => {
+    return (
         <View>
-            <Text>Hello Detials page { props.name }</Text>
-            <Image
-            source={{uri:'https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg'}}
-            style={{
-                width:100,
-                height:100
-            }}
-            >
-            </Image>
-            <Button
-            onPress={()=>{
-                setValue(!value);
-            }}
-            title={value?'Clicked':'Click'}></Button>
+            <Text style={style.myState}>Styleing Comments</Text>
         </View>
     );
 }
 
-const Hello=()=>{
-    return(
+const style = StyleSheet.create({
+    myState: {
+        marginTop: 20,
+        textAlign: 'center',
+        color: 'blue',
+        fontWeight: 'bold',
+        fontSize: 20
+    }
+})
+
+const Detials = (props) => {
+    const [value, setValue] = useState(false);
+    return (
+        <View>
+            <DetialsStyle />
+            <Text>Hello Detials page {props.name}</Text>
+            <Image
+                source={{ uri: 'https://analyticsindiamag.com/wp-content/uploads/2020/10/7d744a684fe03ebc7e8de545f97739dd.jpg' }}
+                style={{
+                    width: 100,
+                    height: 100
+                }}
+            >
+            </Image>
+            <Button
+                onPress={() => {
+                    setValue(!value);
+                }}
+                title={value ? 'Clicked' : 'Click'}></Button>
+        </View>
+    );
+}
+
+const Hello = () => {
+    return (
         <View>
             <Text>Hello</Text>
-            <Detials/>
-            <Detials/>
-            <Detials name="Manu"/>
-            <Detials name="Ali"/>
-            <Detials name="thalsi"/>
+            <Detials />
+            <Detials />
+            <Detials name="Manu" />
+            <Detials name="Ali" />
+            <Detials name="thalsi" />
         </View>
     );
 }
