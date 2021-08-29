@@ -1,7 +1,7 @@
 # React-Native
 
 - React Native is a JavaScript framework
-- 
+- npx react-native run-android
 
 ## Development Environment
 
