@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableWithoutFeedback } from 'react-native';
 
 class List extends Component{
 
@@ -9,8 +9,8 @@ class List extends Component{
             <View style={style.contanier}>
                 <Text style={style.hader}>React Native Toutrial</Text>
                 <FlatList style={{  paddingTop:30 }}  data={[
-                    {key: 'Devin'},
-                    {key: 'Dan'},
+                    {key: 'Fundamentals'},
+                    {key: 'Home'},
                     {key: 'Dominic'},
                     {key: 'Jackson'},
                     {key: 'James'},
@@ -20,7 +20,14 @@ class List extends Component{
                     {key: 'Jimmy'},
                     {key: 'Julie'},
                     ]}
-                renderItem={({item})=><Text style={style.item} >{item.key}</Text>}
+                renderItem={({item})=>{
+                    return(
+                        <TouchableWithoutFeedback onPress={()=>this.props.navigation.navigate(item.key)}>
+                            <Text style={style.item} >{item.key}</Text>
+                        </TouchableWithoutFeedback>
+                    )
+                }
+                }
                 />
             </View>
         );
