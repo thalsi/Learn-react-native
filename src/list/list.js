@@ -10,7 +10,7 @@ class List extends Component{
                 <Text style={style.hader}>React Native Toutrial</Text>
                 <FlatList style={{  paddingTop:30 }}  data={[
                     {key: 'Fundamentals'},
-                    {key: 'Home'},
+                    {key: 'Props'},
                     {key: 'Dominic'},
                     {key: 'Jackson'},
                     {key: 'James'},
