@@ -11,7 +11,7 @@ class List extends Component{
                 <FlatList style={{  paddingTop:30 }}  data={[
                     {key: 'Fundamentals'},
                     {key: 'Props'},
-                    {key: 'Dominic'},
+                    {key: 'state'},
                     {key: 'Jackson'},
                     {key: 'James'},
                     {key: 'Joel'},

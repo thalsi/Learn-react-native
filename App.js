@@ -3,6 +3,7 @@ import List from './src/list/list';
 import Home from './src/Home/Home';
 import Fundamentals from './src/modules/1-Fundamentals/Fundamentals';
 import Props from './src/modules/2-Props/Props';
+import States from './src/modules/3-States/States';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -17,6 +18,7 @@ const App = () => {
           <Stack.Screen name="Home" component={Home} />
           <Stack.Screen name="Fundamentals" component={Fundamentals} />
           <Stack.Screen name="Props" component={Props} />
+          <Stack.Screen name="state" component={States} />
         </Stack.Navigator>
       </NavigationContainer>
     );
