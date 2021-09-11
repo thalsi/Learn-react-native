@@ -12,7 +12,7 @@ class List extends Component{
                     {key: 'Fundamentals'},
                     {key: 'Props'},
                     {key: 'state'},
-                    {key: 'Jackson'},
+                    {key: 'style'},
                     {key: 'James'},
                     {key: 'Joel'},
                     {key: 'John'},

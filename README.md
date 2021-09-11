@@ -41,3 +41,8 @@
 - tate is like a component’s personal data storage
 - State is useful for handling data that changes over time 
 - State gives your components memory
+
+## 6. style
+- two way design componet
+ 1. inline
+ 2. StyleSheet.create
