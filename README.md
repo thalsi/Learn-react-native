@@ -46,3 +46,5 @@
 - two way design componet
  1. inline
  2. StyleSheet.create
+- styles
+    1.width and hight
